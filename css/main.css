@@ -124,7 +124,7 @@ header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: row wrap; 
   width: 60%;
 }
 
@@ -134,13 +134,15 @@ header nav ul {
   width: 100%
 }
 
+
 footer {
+  width: 60%;
+  margin: 50px 0;
   flex-direction: column;
 }
 
-footer .content-wrapper {
-  width: 55%
-  margin: 50px 0;
+.footer-content {
+
 }
 
 footer .social {
@@ -150,14 +152,14 @@ footer .social {
 footer .social-icons {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; 
+} 
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
-footer .social-icons p {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 
 footer .footer-content h4 {
   margin: 20px 0;
@@ -179,12 +181,12 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 /* aside */
 
-aside, .content-wrapper {
+aside {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,7 +208,7 @@ aside, p {
 
 aside .content-wrapper .form-description, 
 aside .content-wrapper .form {               
-        margin: 0;
+  margin: 0;
 }
 
 aside .form input[type=text] {
@@ -227,8 +229,10 @@ aside .form input[type=button] {
 .features {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-flow: row-wrap;
 }
+
+
 
 .features h2 {
   margin: 0 0 60px 0;
@@ -238,19 +242,14 @@ aside .form input[type=button] {
   margin: 0;
 }
 
-.features .features-items {
-  display: flex;
+.features-items {
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
-
-
-.features-items, article {
-  width: 65%;
+article {
+  width: 65%; 
   margin: 30px 0;
-  display: flex;
+  /*display: flex;*/
 }
 
 .features .fontawesome-icon {
@@ -262,8 +261,9 @@ aside .form input[type=button] {
 
 .reviews {
   display: flex;
-  justify-content: start;
   flex-flow: row wrap;
+  justify-content: center;
+  width: 100%; 
 }
 
 .reviews h3 {
@@ -271,9 +271,10 @@ aside .form input[type=button] {
   margin: 20px 0;
 }
 
-reviews h2 {
+.reviews h2 {
   margin-bottom: 40px;
 }
+
 
 /*===============================
   about page styles 
@@ -304,14 +305,10 @@ reviews h2 {
 }
 
 main .contact-section h2 {
-  display: flex;
-  width: 100%;
-  justify-content: start;
+
 }
 main .contact-section .contact-content {
-  display: flex;
-  width: 100%;
-  flex-flow: column;
+
 } 
 
 .contact-content p {
@@ -319,8 +316,7 @@ main .contact-section .contact-content {
 }
 
 .general-information-contact .facilitator-contact {
-  display: flex;
-  width: 100%;
+
 }
 
 
@@ -331,7 +327,7 @@ faq page styles
 ==============================*/
 
 .faq {
-  display: flex;
+  display: flex; 
   justify-content: center;
 } 
 
@@ -340,12 +336,10 @@ faq page styles
 }
 
 .faq. .content-wrapper {
-  display: flex;
-  margin: 50px 0 0 0;
+  margin: 50px 0 0 0; 
 } 
 
 .faq h2 {
-  display: flex;
   width: 100%;
 }
 
@@ -454,7 +448,7 @@ breakpoints below
   /* header styles */
 
   header {
-    justify-content: space-around;
+   justify-content: space-around;
   }
   header .content-wrapper {
     margin: 33px 0;
@@ -468,7 +462,7 @@ breakpoints below
   
   header nav ul {
     width: 33%;
-    justify-content: space-between;
+    justify-content: space-between; 
   }
 
   header .content-divider {
@@ -485,10 +479,12 @@ breakpoints below
   }
 
   aside .content-wrapper {
-    display: flex;
-    flex-flow: row wrap;
+   display: flex;
     justify-content: space-between;
-    align-items: baseline;
+  }
+
+  aside {
+    width: 100%;
   }
 
   aside .content-description, aside .form {
@@ -504,11 +500,10 @@ breakpoints below
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    width: 100%;
   }
 
-  .features {
-    
-  }
+
 
   .features article {
     width: 35%;
@@ -531,8 +526,7 @@ breakpoints below
   }
 
   .reviews article {
-    display: flex;
-    justify-content: start;
+
   }
 
   /* footer */
@@ -541,15 +535,14 @@ breakpoints below
 
   footer .content-wrapper {
     margin: 100px 0;
-    width: 100%;
+   /* width: 100%;*/
   }
 
   .footer-content {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    align-items: baseline;
+  /*  justify-content: center; 
+    flex-flow: row wrap; */
+    align-items: baseline; 
   }  
   .contact .social {
     width: 50%;
@@ -581,14 +574,14 @@ breakpoints below
 
 
 main .contact-section .contact-content {
-  display: flex;
+ /* display: flex; 
   width: 100%;
-  flex-flow: row wrap
+  flex-flow: row wrap*/
 }
 
 main .contact-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
 main .contact-content .general-information-contact, main .contact-content .facilitator-contact {
@@ -600,14 +593,16 @@ main .contact-content .general-information-contact, main .contact-content .facil
  faq page styles 
  =====================*/
 
- .faq {
+ /* .faq {
   display: flex;
   width: 100%;
- }
+ } */
 
- .faq .content-wrapper {
+ 
+ .faq-content-items {
+  display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  flex-flow: row wrap;
  }
 
  .faq h2 {
@@ -622,6 +617,67 @@ main .contact-content .general-information-contact, main .contact-content .facil
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
+
+
+.content-wrapper {
+  max-width: 960px;
+  margin: 0;
+}
+
+/************** homepage styles ************/
+
+header .content-wrapper {
+  margin: 15px 0;
+}
+
+/* hero area */
+
+.hero-area {
+  /*justify-content: flex-start;*/
+}
+
+.hero-area h1 {
+  width: 70%;
+}
+
+/* aside area */
+
+aside .content-wrapper {
+  width: 80%;
+  justify-content: space-around;
+}
+
+
+aside .content-wrapper .form-description, aside .content-wrapper .form {
+  width: 35%;
+}
+
+/* features */
+
+
+.features h2 {
+  width: 100%;
+}
+
+.features article {
+  width: 30%;
+  flex-basis: auto;
+}
+
+/* reviews */
+
+.reviews article div {
+  width: 100%;
+}
+
+
+
+
+/************* about page styles *************/
+
+
+/************* faq page styles *************/
+
 }
 
 /* ==========================================================================
