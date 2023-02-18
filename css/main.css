@@ -151,7 +151,7 @@ footer .social {
 
 footer .social-icons {
   display: flex;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
 } 
 
 
@@ -543,8 +543,12 @@ breakpoints below
 
   footer .content-wrapper {
     margin: 100px 0;
-    width: 100%;
+    width: 80%;
   }
+
+  /*footer {
+    width: 80%;
+  }*/
 
   .footer-content {
     display: flex;
@@ -553,10 +557,6 @@ breakpoints below
     align-items: baseline;
   }  
 
-
-  .contact .social {
-    width: 50%;
-  }
 
 
 
@@ -681,7 +681,11 @@ aside .content-wrapper .form-description, aside .content-wrapper .form {
 }
 
 
+/* footer */
 
+footer .content-wrapper {
+  width: 100%;
+}
 
 /************* about page styles *************/
 
