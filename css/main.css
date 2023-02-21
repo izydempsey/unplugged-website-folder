@@ -133,7 +133,7 @@ textarea {
    }
 
    nav {
-    font-size: 1.125;
+    font-size: 1.125em;
     font-weight: bold;
     text-transform: uppercase;
    }
@@ -156,10 +156,24 @@ textarea {
 
    }
 
-  .social-icons {
+  footer .social-icons p {
     background-color: #527158;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
   }
-   
+
+  footer .social-icons p i {
+    font-size: 1.3125em;
+
+  }
+  
+
+
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -718,7 +732,10 @@ breakpoints below
   }  
 
 
-
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
 
 
  /*==================
