@@ -699,7 +699,11 @@ breakpoints below
   }
 
   .reviews article {
+   
+  }
 
+  .reviews h3 {
+    margin-top: 0;
   }
 
   .reviews-content {
